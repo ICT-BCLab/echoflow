@@ -91,5 +91,5 @@ var (
 
 1. 在每个要运行worker的机器上部署长安链并启动
 2. 进入param_adapter目录下，启动param_adapter，可能会出现配置文件问题，将长安链的crypto_config文件夹软链接到该目录下。
-3. 再打开一个终端，再frameworker目录下，`go run main.go -mode worker`，启动worker，第一次比较慢
-4. worker启动完成后，再要运行worker的机器上，在framework目录下运行`go run main.go -mode master`，系统开始迭代。
+3. 再打开一个终端，再framework目录下，`go run main.go -mode worker`，启动worker，第一次比较慢
+4. worker启动完成后，再要运行master的机器上，在framework目录下运行`go run main.go -mode master`，系统开始迭代。
